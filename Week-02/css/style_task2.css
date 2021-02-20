@@ -12,6 +12,7 @@ body{
 .d_inblock{display: inline-block;}
 .border_BBD141{border-left: 6px solid #BBD141;}
 .border_CCCCCC{border: 8px solid #CCCCCC;}
+.border_212524{border: 2px solid #212524;}
 .border_R5{
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -19,12 +20,14 @@ body{
     border-bottom-right-radius: 5px;
 }
 
+
 /*Flex styles*/
 
 .d-flex{display: flex;}
 .flex-column{flex-direction: column;}
 .flex-between{justify-content: space-between;}
 .flex-item{align-items: center;}
+.flex-Jcenter{justify-content: center;}
 .out {outline: 1px solid;}
 
 /*Menu styles*/
@@ -44,10 +47,24 @@ body{
 }
 
 .menu li{
-    padding: 10px 24px;
+    padding: 0px 24px;
 	border-left: 1px solid black;
 }
 .menu li:first-child{border-left:0;}
+
+.f_menu a{
+    text-decoration: none;
+    color:#637475;
+    font-size: 13px;
+}
+
+.f_border{
+    border: 1px solid #212524;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
 
 /*Image styles*/
 
@@ -70,6 +87,7 @@ body{
 .font_s30{font-size: 30px;}
 
 /*Width styles*/
+.w-20{width: 20%;}
 .w-30{width: 30%;}
 .w-40{width: 40%;}
 .w-50{width: 50%;}
@@ -93,20 +111,24 @@ body{
 .mt-18{margin-top: 18px ;}
 .mt-20{margin-top: 20px;}
 .mt-30{margin-top:30px;}
+.mb-0{margin-bottom: 0px;}
 .mb-30{margin-bottom: 30px;}
 
 
 /*Padding styles*/
 
+.p-0{padding: 0;}
 .p-5{padding: 5px 0;}
 .p-10{padding: 10px 0;}
 .pAll-5{padding: 5px;}
-.pAll-10{padding: 10px;}
+.pAll-30_10{padding: 30px 10px;}
+.pb-20{padding-bottom: 20px;}
 .pt-20{padding-top: 20px;}
 .pt-30{padding-top: 30px;}
 .pb-30{padding-bottom: 30px;}
 .pr-10{padding-right: 10px;}
 .pl-10{padding-left: 10px;}
+.pl-20{padding-left: 20px;}
 .pl-30{padding-left: 30px;}
 .pl-40{padding-left: 40px;}
 
@@ -121,3 +143,5 @@ body{
 .color_212524{background-color:#212524;} /*Menu background*/
 .color_BBD141{background-color:#BBD141;} /*LINE*/
 .color_454545{background-color:#454545;}
+.bg_e7e6e6{background-color: #e7e6e6;} /*Latest news*/
+.bg_DFDFDF{background-color: #DFDFDF;} /*News center block*/
