@@ -25,6 +25,8 @@ img{
 .opacity0{opacity: 0;}
 .bb_040300{border-bottom: 6px solid #040300;}
 .bb_040300_dashed{border-bottom: 2px dashed #040300;}
+.b_040300{border: 1px solid #040300;}
+.br_50{border-radius: 50%;}
 
 /*Flex styles*/
 
@@ -60,8 +62,23 @@ img{
 .color_BACFE4{color: #BACFE4;}
 .color_EE817A{color: #EE817A;}
 
+/*Sosial*/
+.sosial{
+    display: flex;
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+}
+.sosial i{
+    color: #040300;
+    font-size: 30px;
+}
+
 /*Width styles*/
 .w-25{width: 25%;}
+.w-30{width: 30%;}
 .w-33{width: 33%;}
 .w-34{width: 34%;}
 .w-50{width: 50%;}
