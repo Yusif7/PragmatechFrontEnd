@@ -1,0 +1,103 @@
+/*General styles*/
+*{box-sizing: border-box;}
+body{
+    margin: 0;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.ff-lobs{font-family: 'Lobster Two', cursive;}
+.ff-opsans{font-family: 'Open Sans', sans-serif;}
+.container{
+width: 1024px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.icon{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+/*Individual class styles*/
+
+.form-input{
+    width: 100%;
+    height: 32px;
+    display: block;
+    border: 1px solid #e1e1e1;
+    padding: 0 50px 0 20px;
+}
+
+.form-submit{
+    width: 22px;
+    height: 22px;
+    border: none;
+    background-color: transparent;
+    background-image: url(../files/search_icon.png);
+    cursor: pointer;
+}
+
+.basket-icon {
+    width: 41px;
+    height: 37px;
+    background-image: url(../files/basket_icon.png);
+}
+
+/*Position styles*/
+.pos-rel{position: relative;}
+
+.pos-t0-r0{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/*Flex styles*/
+.d-flex{display: flex;}
+.jc-center{justify-content: center;}
+.jc-fend{justify-content: flex-end;}
+.ai-center{align-items: center;}
+
+/*Margin styles*/
+.m-0{margin: 0;}
+.mr-15{margin-right: 15px;}
+.ml-20{margin-left: 20px;}
+.mr-20{margin-right: 20px;}
+
+/*Padding styles*/
+.p-0{padding: 0;}
+.pr-15{padding-right: 15px;}
+/*Width styles*/
+.w-25{width: 25%;}
+.w-50{width: 50%;}
+.w-100{width: 100%;}
+
+/*Heigth styles*/
+.h-100p{height: 100%;}
+
+.aditti{
+    font-size: 50px;
+    color: #3cc3b5;
+}
+
+/*Color styles*/
+.color-a1a1a1{color: #a1a1a1;}
+
+/*Background styles*/
+.bg_41c0b1{background-color: #41c0b1;}
+
+/*Text styles*/
+.fs-32{font-size: 32px;}
+.ff-600{font-weight: 600;}
