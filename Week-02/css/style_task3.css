@@ -54,7 +54,7 @@ body {
 /*IMg styles*/
 
 .bg_img{
-    background-image: url('../files/Task3/daniel.jpg');
+    background-image: url('../files/Task3/daniel1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: -120px;
@@ -72,9 +72,9 @@ body {
 
 .pos_bottom{
     position: absolute;
-    bottom: -8%;
+    bottom: 0%;
     left:50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 50%);
 }
 
 .pos_right{
@@ -100,7 +100,7 @@ body {
 }
 .menu a:hover{
     color: #e74c3c;
-    transition: 0.8 ease;
+    transition: 0.8s ease;
 }
 .menu li:first-child{border-bottom: 2px solid #ffffff;}
 

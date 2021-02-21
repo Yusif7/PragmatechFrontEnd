@@ -1,0 +1,96 @@
+*{box-sizing: border-box;} 
+body {
+    font-family: 'Rokkitt', serif;
+    margin: 0;
+    background-color: #2E57AE;
+}
+section{width: 90%;}
+.container {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+a {
+    text-decoration: none;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.d_block{display: block;}
+.d_inblock{display: inline-block;}
+.obj_fit{object-fit: cover;}
+.opacity0{opacity: 0;}
+.bb_040300{border-bottom: 6px solid #040300;}
+.bb_040300_dashed{border-bottom: 2px dashed #040300;}
+
+/*Flex styles*/
+
+.d-flex{display: flex;}
+.j_between{justify-content: space-between;}
+.j_center{justify-content: center;}
+.a_center{align-items: center;}
+
+/*Text styles*/
+.t_center{text-align: center;}
+.t_upper{text-transform: uppercase;}
+.fw_500{font-weight: 500;}
+.ls_2{letter-spacing: 2px;}
+.fs_11{font-size: 11px;}
+.fs_40{font-size: 40px;}
+.fs_xxl{font-size: xx-large;}
+.fs_4rem{font-size: 4em;}
+
+/*Icon styles*/
+
+
+/*Background color styles*/
+.bg_F5E901{background-color: #F5E901;}
+.bg_FFFFFF{background-color: #ffffff;}
+.bg_EE817A{background-color: #EE817A;}
+.bg_040300{background-color: #040300;}
+
+
+/*Color styles*/
+.color_040300{color: #040300;}
+.color_3962C3{color: #3962C3;}
+.color_F3D1E2{color: #F3D1E2;}
+.color_BACFE4{color: #BACFE4;}
+.color_EE817A{color: #EE817A;}
+
+/*Width styles*/
+.w-25{width: 25%;}
+.w-33{width: 33%;}
+.w-34{width: 34%;}
+.w-50{width: 50%;}
+.w-100{width: 100%;}
+
+.w-350{width: 350px;}
+.w-500{width: 500px;}
+
+/*Heigth styles*/
+.h-100{height: 100%;}
+
+.h-400{height: 400px;}
+
+/*Margin styles*/
+.m_0{margin: 0;}
+.m-30-50{margin: 30px 50px;}
+.mb_10{margin-bottom: 10px;}
+.ml_10{margin-left: 10px;}
+
+/*Padding styles*/
+.p-2-5{padding: 2px 5px;}
+.p_10_20{padding: 10px 20px;}
+.p_40{padding: 40px;}
+.pt_10{padding-top: 10px;}
+.pl_20{padding-left: 20px;}
+.pr_20{padding-right: 20px;}
+.pt_20{padding-top: 20px;}
+.pt_30{padding-top: 30px;}
+.pb_30{padding-bottom: 30px;}
+.pb_50{padding-bottom: 50px;}
+.pb_80{padding-bottom: 80px;}
+.pt_50{padding-top: 50px;}
