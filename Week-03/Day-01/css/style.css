@@ -5,8 +5,26 @@ body{
     font-family: 'Bebas Neue', cursive;
 }
 
+.d-inblock{display: inline-block;}
 .ff-lobs{font-family: 'Lobster Two', cursive;}
 .ff-opsans{font-family: 'Open Sans', sans-serif;}
+.bl-e7e7e7{border-left:1px solid #e7e7e7;}
+.br-e7e7e7{border-right:1px solid #e7e7e7;}
+.shopNow-border{
+    border:3px solid #ffffff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.shop-border{
+    border:1px solid #3cc395;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
 .container{
 width: 1024px;
     margin: 0 auto;
@@ -56,8 +74,47 @@ ul{
     background-image: url(../files/basket_icon.png);
 }
 
+.point li{
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 0 5px;
+}
+.point li:hover{
+    background-color: #77d4cb;
+    transition: 0.8s ease;
+}
+.point li:first-child{margin-left: 0;}
+
+.menu li{
+    border-left:1px solid #e1e1e1;
+    padding: 0px 23px;
+}
+
+.menu li:first-child{
+    border-left: none;
+}
+
+.menu a{
+    color:white;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.shadow {
+    height: auto;
+    width: 80%;
+    margin-left: 35px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(50%);
+}
+
 /*Position styles*/
 .pos-rel{position: relative;}
+.z-index1{z-index: 1;}
 
 .pos-t0-r0{
     position: absolute;
@@ -72,20 +129,51 @@ ul{
 
 /*Margin styles*/
 .m-0{margin: 0;}
+.m-30-0{margin: 30px 0;}
 .mr-15{margin-right: 15px;}
-.ml-20{margin-left: 20px;}
 .mr-20{margin-right: 20px;}
+.mt-20{margin-top: 20px;}
+.ml-30{margin-left: 30px;}
+.mr-30{margin-right: 30px;}
+.mt-30{margin-top: 30px;}
+.ml-40{margin-left: 40px}
+.mt-50{margin-top: 50px;}
+.mt-67{margin-top: 67px;}
+.mb-67{margin-bottom: 67px;}
+.ml-80{margin-left: 80px;}
+.mt-80{margin-top: 80px;}
+.ml-100{margin-left: 100px;}
 
 /*Padding styles*/
 .p-0{padding: 0;}
+.p-5-10{padding: 5px 10px;}
+.p-10-0{padding: 10px 0;}
+.p-10-20{padding: 10px 20px;}
+.pl-10{padding-left: 10px;}
+.pl-24{padding-left: 24px;}
 .pr-15{padding-right: 15px;}
+.pt-20{padding-top: 20px;}
+.pb-20{padding-bottom: 20px;}
+.pl-40{padding-left: 40px;}
+.pl-60{padding-left: 60px;}
+.pr-60{padding-right: 60px;}
 /*Width styles*/
 .w-25{width: 25%;}
+.w-33{width: 33.3333%;}
 .w-50{width: 50%;}
+.w-70{width: 70%;}
+.w-90{width: 90%;}
 .w-100{width: 100%;}
+
+.w-277{width: 277px;}
+.w-137{width: 137px;}
+.w-71{width: 71px;}
 
 /*Heigth styles*/
 .h-100p{height: 100%;}
+.h-150{height: 150px;}
+.h-315{height: 315px;}
+.h-450{height: 450px;}
 
 .aditti{
     font-size: 50px;
@@ -94,10 +182,21 @@ ul{
 
 /*Color styles*/
 .color-a1a1a1{color: #a1a1a1;}
+.color-ffffff{color: #ffffff;}
 
 /*Background styles*/
-.bg_41c0b1{background-color: #41c0b1;}
-
+.bg-39c7bb{background-color: #39c7bb;}
+.bg-4ccfc1{background-color: #4ccfc1;}
+.bg-3cc395{background-color: #3cc395;}
 /*Text styles*/
+.fs-17{font-size: 17px;}
+.fs-27{font-size: 27px;}
+.fs-20{font-size: 20px;}
 .fs-32{font-size: 32px;}
+.fs-60{font-size: 60px;}
 .ff-600{font-weight: 600;}
+.ff-300{font-weight: 300;}
+.lh-9{line-height: 0.9}
+.t-upper{text-transform: uppercase;}
+
+
