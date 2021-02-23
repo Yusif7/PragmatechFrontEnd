@@ -118,6 +118,10 @@ ul{
     transform: translateY(50%);
 }
 
+.footer li{
+    color:#ffffff;
+}
+
 /*Position styles*/
 .pos-rel{position: relative;}
 .z-index1{z-index: 1;}
@@ -135,6 +139,7 @@ ul{
 
 /*Margin styles*/
 .m-0{margin: 0;}
+.m-10{margin: 10px}
 .m-30-0{margin: 30px 0;}
 .m-0-50{margin: 0 50px;}
 .mr-15{margin-right: 15px;}
@@ -199,6 +204,7 @@ ul{
 .bg-4ccfc1{background-color: #4ccfc1;}
 .bg-3cc395{background-color: #3cc395;}
 /*Text styles*/
+.fs-15{font-size: 15px;}
 .fs-17{font-size: 17px;}
 .fs-27{font-size: 27px;}
 .fs-20{font-size: 20px;}
