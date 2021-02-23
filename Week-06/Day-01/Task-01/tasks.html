@@ -60,9 +60,15 @@
         console.log((birth - now)/(1000*86400));
 
         //Sözün hərflərini Azərbaycan əlifbasında ondan sonra gələn hərflə əvəzləmək.
-        let arr = ['a', 'b', 'c', 'd', 'e']
-        let word = 'bcd';
-        
+        let arr = []
+        const main = function(x){
+            for (let i = 0; i < x.length; i ++){
+                let change = x[i].replace(/[a-zA-Z]/g,String.fromCharCode(x[i].charCodeAt(0) + 1))
+                arr.push(change)
+            }
+            return arr
+        }
+        console.log(arr)
     </script>
 </body>
 </html>
