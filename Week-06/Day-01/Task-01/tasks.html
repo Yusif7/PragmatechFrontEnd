@@ -32,7 +32,8 @@
 
         // Verilmiş faylın genişlənməsini tapmaq
         let file = 'img.jpeg'
-        console.log(file.split('.')[1])
+        let last = file.lastIndexOf('.')
+        console.log(file.split(last)[1])
 
         //Adınızın 2-ci hərfini silib, yeni sözü göstərmək.
         let name = 'Yusif';
@@ -60,7 +61,7 @@
         console.log((birth - now)/(1000*86400));
 
         //Sözün hərflərini Azərbaycan əlifbasında ondan sonra gələn hərflə əvəzləmək.
-        let arr = []
+        /*let arr = []
         const main = function(x){
             for (let i = 0; i < x.length; i ++){
                 let change = x[i].replace(/[a-zA-Z]/g,String.fromCharCode(x[i].charCodeAt(0) + 1))
@@ -68,7 +69,16 @@
             }
             return arr
         }
-        console.log(arr)
+        if(arr.length > 1){
+            console.log(arr)
+        } */
+        let alphabet = '';
+        const replace = function(word){
+            return word.replace(/[a-zA-Z]/g, function(word){
+                return String.fromCharCode(word.charCodeAt(0) + 1)
+            })
+        }
+
     </script>
 </body>
 </html>

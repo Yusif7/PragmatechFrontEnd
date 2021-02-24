@@ -1,0 +1,156 @@
+/*GENERAL STYLES*/
+
+*, *:after, *:before{
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: 'Frutiger Light';
+    src: url(fonts/FrutigerCE-Light.otf);
+}
+@font-face{
+    font-family: 'Frutiger Bold';
+    src: url(fonts/FrutigerCE-Bold.otf);
+}
+@font-face{
+    font-family: 'Myriad Pro';
+    src: url(fonts/16175.otf);
+}
+body{
+    margin: 0 auto;
+    font-family:'Frutiger Light';
+}
+.container{
+    width: 900px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.fit-contain{object-fit: contain;}
+.fit-cover{object-fit: cover;}
+.pos-rel{position: relative;}
+.bl-121419{border-right: 1px solid #121419;}
+.d-inblock{display: inline-block;}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.icon{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+/*Flex styles*/
+.d-flex{
+    display: flex;
+}
+.jc-between{justify-content: space-between;}
+.ai-center{align-items: center;}
+
+/*Width styles*/
+.w-40{width: 40%;}
+.w-50{width: 50%;}
+.w-60{width: 60%;}
+.w-80{width: 80%;}
+.w-100{width: 100%;}
+
+/*Heigth Styles*/
+.h-65{height: 65px;}
+
+.h-100p{height: 100%;}
+/*Background colors*/
+.bg-1a1e27{background-color: #1a1e27;} /*Menu*/
+
+/*Colors*/
+.color-575a61{color: #575a61;}
+
+/*Text styles*/
+.fs-15{font-size: 15px;}
+
+/*Paddin styles*/
+.p-0-2{padding: 0 2px;}
+.pl-20{padding-left: 20px;}
+
+/*INDIVIDUAL CLASS STYLES*/
+.menu a{
+    color: #575a61;
+    font-size: 15px;
+}
+.menu li {
+    padding: 0 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.menu li:after{
+    content: url(../files/arrow.png);
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 9px);
+    display: inline-flex;
+    /*background-image: url(../files/arrow.png);*/
+    /*background-position: center center;*/
+    width: 18px;
+    height: 9px;
+    opacity: 0;
+    transition: .8s ease;
+    transform: translateY(-50%);
+}
+.menu li:hover::after{
+    opacity: 1;
+    transition: .8s ease;
+}
+
+.wifi-icon{
+    background-image: url(../files/wi-fi.png);
+    width: 21px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    right: 0%;
+    transform: translateX(-50%);
+    margin-right: 10px;
+}
+
+.form-input{
+    width: 100%;
+    height: 22px;
+    display: block;
+    border: 1px solid #e1e1e1;
+    padding: 0 50px 0 10px;
+    border: 1px solid #606369;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.form-submit{
+    width: 15px;
+    height: 17px;
+    border: none;
+    background-color: transparent;
+    background-image: url(../files/search_arrow.png);
+    cursor: pointer;
+    
+
+}
+.arrow{
+    position: absolute;
+    top: 0;
+    right: 5px;
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+}
