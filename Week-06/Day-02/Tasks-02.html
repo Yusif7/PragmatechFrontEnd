@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    /*1) Verilmiş 2 rəqəmin birinin mənfi müsbət olacağı təqdirdə true, əks halda false qaytarsın.
+    Məsələn: 5, 5 => false ||| 5, -5 => true ||| -5, 5 => true ||| -5, -5 => true*/
+    let num1 = -5;
+    let num2 = -5;
+    if (num1 > 0 || num2 > 0)
+    {
+        console.log(true)
+    }
+    else{
+        console.log(false)
+    }
+
+    /*Elə proqram yazın ki, verilmiş cümlənin əvvəlinə verilmiş simvolları əlavə etsin. Əgər həmin
+    simvollar verilmiş cümlənin əvvəlində varsa, verilmiş cümlənin özünü göstərsin.
+    Məsələn: proqramlasdirma, proq => proqramlasdirma
+    proqramlasdirma, veb => vebproqramlasdirma*/
+        let sentence = 'proqramlasdirma';
+        let a = 'ram';
+
+        if(sentence.slice(0,a.length).includes(a)){
+            console.log(sentence)
+        }
+        else{
+            console.log(a + sentence)
+        }
+    
+    /*3) Verilmiş ədəd 3 və ya 7-yə tam bölünürsə(делить) true, əks halda false cavabı göstərsin.*/
+    let num3 = Math.floor(Math.random()*100)
+    if (num3 % 3 == 0 || num3 % 7 == 0){
+        console.log(true)
+    }
+    else{
+        console.log(false)
+    }
+
+    /*4) Verilmiş 2 ədədin 30-70 arasında olmasını yoxlamaq. Rəqəmlərin hər ikisinin, yalnız birinin və
+        ya heç birinin aralıqda olub-olmaması şərtlərini yoxlamaq və uyğun mesajı çıxarmaq.*/
+    let num4 = 30;
+    let num5 = 70;
+    if ((num4 >= 30 && num4 <= 70) && (num5 >= 30 && num5 <= 70)){
+        console.log(true)
+    }
+    else {
+        console.log(false)
+    }
+
+    /*5) Verilmiş 2 ədədin hansının 50-yə daha yaxın olduğunu tapmaq. Mümkün şərtləri proqramda
+        nəzərə alın və uyğun mesajı(yaxin və ya uzaq) çıxarın*/
+    let num6 = 60;
+    let num7 = 70;
+    if(num6 == 50 || num7 == 50){
+        console.log(`Daxil edilen deyer 50 beraberdir...`)
+    }
+    else if((num6 > 50 || num7 > 50) && (num6 - 50 > num7 - 50)){
+        console.log(num6)
+    }
+    else if((num6 > 50 || num7 > 50) && (num6 - 50 < num7 - 50)){
+        console.log(num7)
+    }
+    else if ((num6 > 0 && num7 > 0) && (num7 > num6) && num7 < 50){ // ++
+        console.log(num7)
+    }
+    else if ((num6 < 0 && num7 < 0) && ((num6*(-1)) < (num7*(-1)))){ // --
+        console.log(num6)
+    }
+    else if((num6 < 0 && num7 >0 )){ // -+
+        console.log(num7)
+    }
+    else { // +-
+        console.log(num6)
+    }
+
+    /*6) Hazırki tarixi götürüb yoxlayın ki, həftəsonu-durmu. Əgər həftəsonudursa true, əks halda false yazın.*/
+    var date = new Date();
+    var days = ["bazar ertəsi","çərşənbə axşamı","çərşənbə","cümə axşamı","cümə","şənbə","bazar"];
+    if (days[date.getDay()] == days[5] || days[date.getDay()] == days[6] ) {
+        console.log('Bugun: ' + days[date.getDay()]);
+    }
+    else{
+        console.log(false);
+    }
+
+    /*7) Verilmiş ədədin 1-10 arasında çıxarılmış random ədəd ilə uyğun gəlib-gəlməmisini yoxlamaq. Əgər uyğundursa “uygundur”, deyilsə “uygun deyil” yazılsın*/
+    let ran = Math.floor(Math.random() * 11)
+    let num8 = 5;
+    if (ran == 5){
+        console.log(true)
+    }
+    else{
+        console.log(false)
+    } 
+    
+    /*8) Verilmiş sözün son 3 hərfini kiçik hərflə yazmaq. Əgər verilmiş söz 3 simvoldan kiçikdirsə, bütün hərflərini böyüyə çevirmək
+        Məsələn: SALAM => SAlam,  AT => AT,  at => AT*/
+    let word = 'abcsfas';
+    if(word.length <= 3){
+        console.log(word.slice(0).toLocaleUpperCase())
+    }
+    else{
+        console.log(word.slice(2).toLocaleUpperCase())
+    }
+    /*9) Verilmiş 2 rəqəmin biri 5 və ya bu iki rəqəmin fərqi 5-dirsə true, əks halda false qaytarsın
+    Məsələn: 33, 5 => true,  21,16 => true,  33, 16 => false*/
+    let num9 = 33;
+    let num10 = 16;
+    if (num9 == 5 || num10 == 5 || (num9 - num10 == 5) || (num10 - num9 == 5)){
+        console.log(true)
+    }
+    else{
+        console.log(false)
+    }
+    
+
+    /*10) Verilmiş sözün, verilmiş hərfindən əvvəlki hərfini tapıb, Azərbaycan əlifbasında ondan sonra gələn hərfi göstərmək. Əgər əlifbada sonuncu hərfdirsə, elə özünü göstərmək
+    Məsələn: salam, l => b ,  nizam, a => z ,  elman, a => n*/
+    let alphabet = 'abcdefghijklmnopqrstuvwxyz';
+    let word1 = 'elman';
+    let letter1 = 'a';
+    let char = word1.charAt(word1.indexOf(letter1)-1); // Find previous leter in word1
+    let char1 = alphabet.charAt(alphabet.indexOf(char)+1); // Find net letter in alphabet
+    console.log(char)
+    console.log(char1)
+
+    /*11) Verilmiş sözün, verilmiş hərfinin index-ləri cəminin 5-dən böyük olmasını yoxlamaq və cəminin neçə olmasını göstərmək. Əgər cəm 5-dən böyükdürsə "böyükdür", əks halda "kiçikdir" yazın.
+    Məsələn: salam, a  =>  cəm: 1+3, kiçikdir.  teyyare, e => cəm: 1+6, böyükdür*/
+    let word2 = 'teyyare';
+    let letterMa = 'e'
+    let search = word2.indexOf(letterMa)
+    let search2 = search + word2.slice(search+1).indexOf(letterMa)
+    if (search + search2 > 5){
+        console.log('Boyukdur')
+    }
+    else{
+        console.log('Kicikdir')
+    }
+    /*12) Verilmiş sözün, verilmiş hərfindən 3 hərf sonrakı hərfi tapıb, göstərmək. Əgər belə bir hərf yoxdursa, sözün 1 və 2-ci hərfini göstərmək.
+    Məsələn: teyyare, e => a,  proqramlasdirma, m => s,  javascript, p => ja,  at, a => at*/
+
+    let word3 = 'at';
+    let lettermain = 'a';
+    let char2 = word3.charAt(word3.indexOf(lettermain)+3); // Find previous leter in word1
+    if((word3.indexOf(lettermain)+3) > word3.length){
+        console.log(word3.slice(0,2))
+    }
+    else{
+        console.log(char2)
+    }
+    </script>
+</body>
+</html>

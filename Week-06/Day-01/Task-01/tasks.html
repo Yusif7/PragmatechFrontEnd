@@ -48,7 +48,7 @@
 
         // "azerbaycan" sözündə random sırada çıxmış bir hərfi böyük hərflə əvəzləmək.
         let country = 'azerbaycan';
-        let ran = Math.floor(Math.random() * 11);     // returns a random integer from 0 to 10
+        let ran = Math.floor(Math.random() * country.length);     // returns a random integer from 0 to 10
         let change = country[ran].toUpperCase();
         console.log(country.replace(country[ran], change));
         
@@ -56,12 +56,22 @@
         console.log(js.slice(0,1) + js.slice(0) + js.slice(0,1));
 
         // Ad gününüzə neçə gün qalıb? bunu tapmaq üçün proqram yazmaq (JS Date)
-        let now = new Date('2021-1-22');
-        let birth = new Date('2021-3-7');
-        console.log((birth - now)/(1000*86400));
+        let now = new Date('2021-1-22'); 
+        let birth = new Date('2021-1-6');
+        let result = birth - now
+        let dayMs = (1000*86400) // Bir gun milli second olaraq
+
+        if ((birth - now)/ dayMs < 0){
+            //console.log(((birth - now)/dayMs)*(-1))
+            console.log('Dogum tarixini artiq kecib')
+        }
+        else
+        {
+            console.log((birth - now)/(dayMs))
+        }
 
         //Sözün hərflərini Azərbaycan əlifbasında ondan sonra gələn hərflə əvəzləmək.
-        /*let arr = []
+        /*let arr =
         const main = function(x){
             for (let i = 0; i < x.length; i ++){
                 let change = x[i].replace(/[a-zA-Z]/g,String.fromCharCode(x[i].charCodeAt(0) + 1))
@@ -72,13 +82,15 @@
         if(arr.length > 1){
             console.log(arr)
         } */
-        let alphabet = '';
+        
         const replace = function(word){
             return word.replace(/[a-zA-Z]/g, function(word){
                 return String.fromCharCode(word.charCodeAt(0) + 1)
             })
         }
-
+        let alphabet = 'abcdefghijklmnopqrstuvwxyz';
+        let word = 'abc';
+        let test = String.fromCharCode(alphabet.charCodeAt(word.slice(0,word.length))+1)
     </script>
 </body>
 </html>
