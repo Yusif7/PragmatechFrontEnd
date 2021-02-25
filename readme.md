@@ -4,4 +4,9 @@
     -- Task-02 complete
     -- Task-04 complete
 # Week-03
-    -- Task complete
+    -- Task-01 complete
+# Week-06
+    -- Day - 01 Tasks complete
+    -- Day - 02 Tasks complete
+    
+    
