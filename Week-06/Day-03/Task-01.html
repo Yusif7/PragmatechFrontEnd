@@ -12,8 +12,10 @@
         /*1) Reqemlerden ibaret verilmis array-in ilk ve son reqemlerinin yerini deyismek
         meselen: [1, 2, 3, 4, 9] => [9, 2, 3, 4, 1]*/
         let arr = [1,2,3,4,9]
-        arr[0]
-        arr.slice(-1)
+        let test = arr.slice(0,1)
+        let test1 = arr.slice(-1)
+        let test2 = arr.slice(1,(length-1))
+        console.log(test2.concat())
         
         /*2) Array-də lazımı əməliyyatları edəndən sonra “Mercedez - Audi - Opel” string-ini yaratmaq.
         ["BMW", "Fiat", "Mercedez", "Audi", "Opel", "Bentley"]*/
@@ -62,7 +64,6 @@
         let b = num - a
         console.log(a+b)
         /*6) Verilmiş sözün son 3 hərfini kiçik hərflə yazmaq. Əgər verilmiş söz 3 simvoldan kiçikdirsə, bütün hərflərini böyüyə çevirmək*/
-
         let word = 'abcde'
         if (word.length < 3){
             word.slice(0).toLocaleUpperCase()
@@ -70,12 +71,11 @@
         else{
             word.slice(-3).toLocaleLowerCase()
         }
-
         /*7) Verilmiş array-in verilmiş rəqəmini verilmiş rəqəmlə dəyişdirmək.
         Məsələn: [3,10,2,51,4, 643, 4, 11], 4, 222 => [3,10,2,51,222, 643, 222, 11]*/
 
         let arr3 = [3,10,2,51,4,643,4,11]
-        let num1 = 4;
+        let num1 = 11;
         let num2 = 222;
         let find = arr3.indexOf(num1)
         let find2 = find+1 + arr3.slice(find+1).indexOf(num1)
@@ -87,7 +87,6 @@
         Məsələn: [ 3, 8, 7, 6, 5, -4, 3, 2, 1 ] => -4,-3,1,2,3,5,6,7,8*/
         let arr4 = [ 3, 8, 7, 6, 5, -4, 3, 2, 1 ]
         console.log(arr4.sort())
-
         /*9) Verilmiş array-dan random sayda elementi random çıxan index-dən kəsib, arrayın sonuna birləşdirmək
         Məsələn: [ 3, 8, 7, 6, 5, -4, 3, 2, 1 ], rand 3 çıxdısa => [ 3, 8, 7,  3, 2, 1, 6, 5, -4 ]*/
         let arr5 = [ 3, 8, 7, 6, 5, -4, 3, 2, 1 ]
@@ -146,7 +145,7 @@
         let arr9 = ["BMW", "Fiat", "Mercedez", "Audi", "Opel", "Bentley"];
         let num6 = 1
         let num7 = 4
-        let elem1 = arr9.slice(0,num6)
+        /*let elem1 = arr9.slice(0,num6)
         let elem2 = arr9.slice((num6+1), num7+1)
         let elem3 = arr9.slice(num6,(num6+1))
         let elem4 = arr9.slice(num7+1)
@@ -156,7 +155,12 @@
         }
         else{
             console.log(result1)
-        }
+        }*/
+
+        let x = arr9.splice(num6,1)
+        let y = arr9.splice(num7,0,arr9.slice(num6,num6+1))
+
+
     </script>
 </body>
 </html>
