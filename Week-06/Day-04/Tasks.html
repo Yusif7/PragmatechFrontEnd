@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+
+</head>
+<body>
+    <script>
+        /*
+        1) Array-dəki dəyərləri bu formada dövr ilə çıxarmaq: BMW - Fiat - Mercedez - Audi - Opel - Bentley
+            ["BMW", "Fiat", "Mercedez", "Audi", "Opel", "Bentley"]*/
+        let arr = ["BMW", "Fiat", "Mercedez", "Audi", "Opel", "Bentley"]
+        let space = '';
+        for (let i = 0; i < arr.length; i++ ){
+            if (i == arr.length -1){
+                space += arr[i]
+                break
+            }
+            space += arr[i] + ' - '
+        }
+        console.log(space)
+
+        /*2) Obyektdəki dəyərlərə əsasən, dövrdən istifadə edərək
+        “Adı: Lorem, Familyası: İpsum, Yaşı: 34” olaraq digərlərini də ad, familiya, yaş olaraq console-da çıxarmaq. Sonda bütün age-lərin cəmini(сложить) dövr ilə tapıb console-da göstərin.*/
+
+        var students = [ 
+
+        {
+
+        name: 'John',
+
+        surname: 'Doe',
+
+        age: 41
+
+        },
+
+        {
+
+        name: 'Lorem',
+
+        surname: 'Ipsum',
+
+        age: 34
+
+        },
+
+        {
+
+        name: 'Dummy',
+
+        surname: 'Name',
+
+        age: 24
+
+        }];
+
+        let result = ''
+        let sum = 0;
+        for(let i = 0; i < students.length; i++){
+            result = `Adı: ${students[i].name}, Familyası: ${students[i].surname}, Yaşı: ${students[i].age}`
+            sum += students[i].age;
+            if(students[i].age == 34){
+                console.log(result)
+            }
+        }
+        console.log('Toplam: ' + sum)
+        /*3) Reqemlerden ibaret verilmis array-in icinde 1 ve ya 3 reqeminin olmasini dövr ilə yoxlamaq. true ve ya false qaytarmaq
+        meselen: [7, 8] => false
+        [9, 3, 7, 8] => true*/
+        let arr1 = [9, 3, 7, 8];
+        let a = 3;
+        let b = 1;
+        for (let i = 0; i < arr1.length; i++){
+                if (a == arr1[i] || b == arr1[i]){
+                    console.log(true)
+                    break
+                }
+        }
+        /*if (arr1.includes(a) || arr1.includes(b)){
+            console.log(true)
+        }
+        else{
+            console.log(false)
+        }*/
+        
+        /*4) Verilmiş rəqəmin tam(целая) və kəsr(дробь) hissəsinə(часть) ayırıb, toplamaq(сложить). Yalnız dövr, if/else-dən istifadə edərək yazmaq lazımdır, hazır method-lar OLMAZ
+        Məsələn: 1.7 => 8, 5.18 => 14, 10.5=> 15*/
+        let num = 1.7;
+        let num6 = Math.floor(num)
+        let strnum = String(num)
+        let dot = '.'
+        let result1 = 0;
+        for (let i = 0; i < strnum.length; i++){
+            if (strnum[i] == dot){
+                for (let j = (i+1); j < strnum.length; j++){
+                    result1 += parseInt(strnum[j])
+                }
+            }
+        }
+        console.log(num6 + result1)
+
+        /*5) Verilmiş sözün son 3 hərfini dövrdən istifadə edərək kiçik hərflərlə yazmaq. 
+        Məsələn: SALAM => SAlam*/
+        let word = 'SALAM';
+        let num2 = 2;
+        let len = word.length
+        let k1 = len - num2
+        let result2 = '';
+        let result3 = '';
+        if (num2 >= word.length || num2 < 0){
+            console.log('Teyin olunan deyer sozun uzunlugundan uygun deyil.')
+        }
+        else{
+            for (let i = 0; i < word.length ; i++){
+                if (i < k1){
+                    result2 += word[i]
+                }
+                else if(i >= k1){
+                    result3 += word[i].toLowerCase()
+                }
+            }
+        }
+        console.log(result2 + result3)
+
+        /*6) Verilmiş array-ın verilmiş rəqəminin hansı index-lər aralığında yerləşməsini tapmaq. Dövr ilə
+        Məsələn: [10,20,30,40,50,60,70], 50 => 3 və 5*/
+        let arr2 = [10,20,30,40,50,60,70];
+        let num3 = 20;
+
+        if (arr2.indexOf(num3) == 0){
+            console.log('First index of array :' + arr2[0])
+        }
+        else if(arr2.indexOf(num3) == (arr2.length-1)){
+            console.log('Last index of array :' + arr2[(arr2.length-1)])
+        }
+        else{
+            for (let i = 0; i < arr2.length; i++ ){
+                if(num3 == arr2[i]){
+                    console.log(`${num3} verilmis arrayin ${i - 1} ve ${i + 1} index araliginda yerlesir`)
+                }
+            }
+        }
+        /*7) Verilmiş array-ın verilmiş rəqəmindən sonra neçə elmentin olmasını yoxlamaq və onları console-da göstərmək. Dövr ilə
+        Məsələn: [10,20,30,40,50,60,70], 50 => 2 element, 60, 70*/
+        let arr3 = [10,20,30,40,50,60,70];
+        let num4 = 50;
+        let result4 = '';
+        let len1 = arr3.length-1;
+        let elemnum = 0;
+        for (let i = 0; i < arr3.length; i++){
+            if (num4 == arr3[i]){
+                elemnum = len1 - i;
+                for(let j = (i+1); j < arr3.length; j++){
+                    result4 += arr3[j] + ','
+                }
+            }
+        }
+        console.log(`${elemnum} element, ${result4}`)
+        /*8) Verilmiş array-ın verilmiş index-dəki elementini console-da göstərmək. Dövr ilə
+        Məsələn: [10,20,30,40,50,60,70], 4 => 50*/
+        let arr4 = [10,20,30,40,50,60,70]
+        let num5 = 2
+        let result5 = ''
+        for (let i = 0; i < arr4.length; i++){
+            if (i == num5){
+                console.log(arr4[i])
+                break
+            }
+        }
+    </script>
+</body>
+</html>
