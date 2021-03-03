@@ -1,15 +1,23 @@
 
+body{
+    font-family: 'Roboto', sans-serif;
+}
 .ff-hammer{font-family: 'Hammersmith One', sans-serif;}
 .ff-playfair{font-family: 'Playfair Display', serif;}
-.ff-roboto{font-family: 'Roboto', sans-serif;}
 .fw-100{font-weight: 100;}
+.fw-700{font-weight: 700;}
 .fw-900{font-weight: 900;}
-.h-100{height: 100%}
+.h-2p{height: 2px;}
 .h-88{height: 88%;}
+.h-100{height: 100%;}
+.w-50p{width: 50px;}
+.br-50{border-radius: 50%;}
+.b-white{border: 1px solid #ffffff;}
 
 
 /*Color styles*/
 .color-25c2ce{color: #25c2ce;}
+.color-97969a{color: #97969a;}
 
 /*Special styles*/
 .bg-header{
@@ -19,19 +27,83 @@
     background-size: cover;
 }
 
+.bg-newYork{
+    background-image: url(../files/New-York.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.play-icon{
+    background-image: url(../files/play.png);
+    width: 37px;
+    height: 45px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.desktop-icon{
+    background-image: url(../files/icon1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+}
 .overlay-header{
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
-    right: 0;
-    opacity: 0.85;
+    left: 0;
     background-color: #0d0734;
+    opacity: 0.85;
 }
 .menu a{
     font-size: 13px;
+    font-family: 'Roboto';
+    font-weight: 900;
+}
+.menu a:hover{
+    color: #00e0d0 !important;
+    transition: 1.5s ease;
 }
 
+.separator{
+    background-image: url(../files/Separator.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 1px;
+}
+.separator2{
+    background-image: url(../files/Separator2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.dots span{
+    width: 12px;
+    height: 12px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 120px;
+    display: inline-block;
+    cursor: pointer;
+}
+.dots span:hover{
+    background-color: #00e0d0 !important;
+    transition: 1.5s ease;
+}
 
 /* Small */
 @media (min-width: 576px) {
@@ -46,10 +118,21 @@
 @media (min-width: 992px) {
 .fs-lg-30{font-size: 30px;}
 .fs-lg-13{font-size: 13px;}
+.fs-lg-14{font-size: 14px;}
+.fs-lg-22{font-size: 22px;}
+.h-lg-50{height: 50px;}
+.h-lg-100{height: 100px;}
+.h-lg-550{height: 550px;}
 .h-lg-660{height: 660px;}
+
+.w-lg-50{width: 50px;}
+.w-lg-100{width: 100px;}
+
+
 }
 
 /* Extra Large */
 @media (min-width: 1200px) {
 
 }
+

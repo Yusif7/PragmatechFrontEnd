@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const alph = "abcçdeəfgğhxıijkqlmnoöprsştuüvyz";
+        let word = 'yusif';
+        let result = ''
+        for(let i = 0; i < word.length; i++){
+            for(let j = 0; j < alph.length; j++){
+                if(word[i] == alph[j]){
+                    result += alph[j+1]
+                }
+            }
+        }
+        console.log(result)
+
+        const next = (alp, str) => {
+            let result = ''
+            for(let i = 0; i < str.length; i++){
+                for(let j = 0; j < alp.length; j++){
+                    if(word[i] == alp[j]){
+                        result += alp[j+1]
+                    }
+                }
+            }
+            return result
+        }
+        
+        console.log(next(alph,word))
+
+    </script>
+</body>
+</html>

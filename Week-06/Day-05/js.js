@@ -93,17 +93,31 @@ Tapşırıq 5:
         Verilen soz ise: w3schools
         Cavab=> True-count is 2
 */
-/* let sentence = 'Welcome to w3schools.w3schools.com';
-let word = 'w3schools';
-let len = word.length
-let result = '';
-for (let i = 0; i < sentence.length; i = i +len){
-    if (sentence[i] == '.' || sentence[i] == ' '){
-        
+/* const slice = (startIndex, sentence, word) => {
+    let j = 0 // Dlya ispolzovaniye otcheta
+    for(let i = startIndex; i < startIndex +word.length; i++){ // Iwi snacalo do + dlina nujnoy stroki
+        if(word[j++] !== sentence[i]) // Pri kajdom vxojdenii v if perexodi na slediyuwiy simvol
+        {
+            return false;
+        }
     }
-    
-    console.log(result)
-} */
+    return true
+}
+
+let sentence = 'Welcome w3schoolsto w3schools.w3schools.comw3schools-w3schools';
+let word = 'w3schools';
+let count = 0;
+let isFound = false;
+
+for(let i = 0; i < sentence.length; i++){
+    if(word[0] == sentence[i]){
+        if(slice(i,sentence,word)){
+            count++
+            isFound = true
+        }
+    }
+}
+console.log(isFound + ' count is ' + count) */
 
 /* let string = 'Welcome to w3schools.w3schools.com'
 console.log(string.split('w3schools').length - 1) */
@@ -150,3 +164,21 @@ Tapşırıq 8:
     1-Qiş,2-Yay,3-Payız,4-Yaz(Switch-case ile bu shekilde yaza bilersiniz)
     eger 2 daxil edilerse, Console.log('Iyun,Iyul,Avqust') bu şəkildə yazılmalıdır
 */
+/* let inp = 2;
+switch(inp){
+    case 1:
+        console.log('Dekabr, Yanvar, Fevral');
+        break;
+    case 2:
+        console.log('Iyun, Iyul, Avqust');
+        break;
+    case 3:
+        console.log('Sentyabr, Oktyabr, Noyabr');
+        break;
+    case 4:
+        console.log('Mart, Aprel, May');
+        break;
+    default:
+        console.log('No input ')
+} */
+
