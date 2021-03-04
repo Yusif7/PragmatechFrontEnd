@@ -14,17 +14,32 @@
         saturn => saturn
     </p>
     <script>
-        let word = 'salamlar';
-        let result = ''
-        let result1 = ''
-        for(let i = 0; i < word.length; i++){
-            for(let j = (i+1); j < word.length; j++){
-                if (word[i] !== word[j]){
-                    result += word[i]
+        const include = (start, string, find) => {
+            let str = String(string)
+            for(let i = start; i < str.length; i++){
+                if (find == str[i]){
+                    return true
                 }
             }
+            return false
         }
+
+        let word = 'saturn'
+        let result = ''
+        let duplicate = ''
+        for(let i = 0; i < word.length; i++){
+            if(include(0,duplicate,word[i])){ //eger icinde varsa o zaman loop-a qayit
+                continue
+            }
+            if(include((i+1),word,word[i])){
+                duplicate += word[i] // ui
+                continue
+            }
+            result += word[i]
+        }
+
         console.log(result)
+
     </script>
 </body>
 </html>

@@ -5,14 +5,19 @@ body{
 .ff-hammer{font-family: 'Hammersmith One', sans-serif;}
 .ff-playfair{font-family: 'Playfair Display', serif;}
 .fw-100{font-weight: 100;}
+.fw-400{font-weight: 400;}
 .fw-700{font-weight: 700;}
 .fw-900{font-weight: 900;}
 .h-2p{height: 2px;}
 .h-88{height: 88%;}
 .h-100{height: 100%;}
 .w-50p{width: 50px;}
+.w-100{width: 100%;}
 .br-50{border-radius: 50%;}
 .b-white{border: 1px solid #ffffff;}
+.b-97969a{border: 1px solid #97969a;}
+.obj-cover{object-fit: cover;}
+
 
 
 /*Color styles*/
@@ -81,12 +86,9 @@ body{
     height: 1px;
 }
 .separator2{
-    background-image: url(../files/Separator2.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 100%;
-    height: 100%;
+    background-color: grey;
+    width: 50px;
+    height: 2px;
 }
 
 .dots span{
@@ -105,6 +107,13 @@ body{
     transition: 1.5s ease;
 }
 
+.arrow {
+    position: absolute;
+    right: 0;
+    top: 0;
+    line-height: 0.9;
+}
+
 /* Small */
 @media (min-width: 576px) {
 }
@@ -119,11 +128,14 @@ body{
 .fs-lg-30{font-size: 30px;}
 .fs-lg-13{font-size: 13px;}
 .fs-lg-14{font-size: 14px;}
+.fs-lg-16{font-size: 16px;}
 .fs-lg-22{font-size: 22px;}
 .h-lg-50{height: 50px;}
 .h-lg-100{height: 100px;}
+.h-lg-190{height: 190px;}
 .h-lg-550{height: 550px;}
 .h-lg-660{height: 660px;}
+.h-lg-712{height: 712px;}
 
 .w-lg-50{width: 50px;}
 .w-lg-100{width: 100px;}
