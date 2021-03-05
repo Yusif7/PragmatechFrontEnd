@@ -29,8 +29,8 @@ Tapşırıq 2:
         Example: 0 1 1 2 3 5 8 13 21 34
 */
     
-    // Fo = 0, F1 = 1, Fn = Fn-1 + Fn-2
-/*     let previous = 0;
+/*     // Fo = 0, F1 = 1, Fn = Fn-1 + Fn-2
+    let previous = 0;
     let next = 1;
     let i = 1;
     while(i < 9){
@@ -54,19 +54,16 @@ Tapşırıq 2:
         // prev = 21 - 8 = 13
         // next = 21 + 13 = 34
     } */
-
-/*      // Fo = 0, F1 = 1, Fn = Fn-1 + Fn-2 n >=2
-    let a = 1
-    let b = 1
-    for(let i = 2; i < 9; i ++){
-        let result = a + b;
-        a = b;
-        b = result;
-        console.log(result)
-    } */
-
-
-
+// Fo = 0, F1 = 1, Fn = Fn-1 + Fn-2 n>2
+/* const recursion = (number) => {
+    if (number < 2){
+        return number
+    }
+    else{
+        return recursion(number-1)+recursion(number-2)
+    }
+}
+console.log(recursion(10)) */
 /*
 Tapşırıq 4:
         Size mueyyen bir aralig verilir o araligda sade ededleri console-a cixaran proqram

@@ -9,7 +9,7 @@
 }
 console.log(substr(1, 'javascript',4)) */
 
-/* <li>Slice (array, string)</li> */
+/* <li>Slice (array, string)</li>
 
 
 /* const slice = (start,str,end = str.length) => {
@@ -91,9 +91,13 @@ console.log(toString(25)) */
 /* 9) Pop */
 /* let array = ['j','a','v','a','s','c','r','i','p','t'];
 const pop = (array) => {
-    let result = []
+    let res = ''
     for (let i = 0; i < array.length-1; i++){
-        array[i] += array[i]
+        res += array[i]
+    }
+    array.length = []
+    for(let i =0; i < res.length; i++){
+        array[i] = res[i]
     }
     return array
 }
@@ -127,10 +131,9 @@ const join  = (array, sep=',') => {
 
 console.log(join(array)) */
 
-/* 5) Replace */
+/* 5) Replace*/ 
 /* 7) Trim // Ortadaki bosluguda silinir*/
 /* 11) Shift */
 /* 12) Unshift */
 /* 14) Splice */
 /* 15) Split */
-
