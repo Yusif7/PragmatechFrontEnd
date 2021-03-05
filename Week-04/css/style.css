@@ -10,13 +10,12 @@ body{
 .fw-900{font-weight: 900;}
 .h-2p{height: 2px;}
 .h-88{height: 88%;}
-.h-100{height: 100%;}
 .w-50p{width: 50px;}
-.w-100{width: 100%;}
 .br-50{border-radius: 50%;}
 .b-white{border: 1px solid #ffffff;}
 .b-97969a{border: 1px solid #97969a;}
 .obj-cover{object-fit: cover;}
+.obj-contain{object-fit: contain;}
 
 
 
@@ -114,6 +113,22 @@ body{
     line-height: 0.9;
 }
 
+.pics img:hover {
+    transform: scale(1.5) !important;
+    transition: 1.5s ease;
+}
+.logo {
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.zara-logo {
+    background-image: url(../files/Zara_Logo.png);
+}
+.mango-logo{
+    background-image: url(../files/Logo_of_Mango_\(new\).png);
+}
+
 /* Small */
 @media (min-width: 576px) {
 }
@@ -130,15 +145,20 @@ body{
 .fs-lg-14{font-size: 14px;}
 .fs-lg-16{font-size: 16px;}
 .fs-lg-22{font-size: 22px;}
+.fs-lg-50{font-size: 50px;}
+.fs-lg-100{font-size: 100px;}
 .h-lg-50{height: 50px;}
+.h-lg-70{height: 70px;}
 .h-lg-100{height: 100px;}
 .h-lg-190{height: 190px;}
+.h-lg-500{height: 500px;}
 .h-lg-550{height: 550px;}
 .h-lg-660{height: 660px;}
 .h-lg-712{height: 712px;}
 
 .w-lg-50{width: 50px;}
 .w-lg-100{width: 100px;}
+.w-lg-130{width: 130px;}
 
 
 }

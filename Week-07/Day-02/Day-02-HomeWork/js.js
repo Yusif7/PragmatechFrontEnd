@@ -118,17 +118,17 @@ console.log(check(word,find)) */
 17) Verilmiş iki array-ın ən az bir ortaq (common) ədədin olmasını yoxlamaq. Varsa həmin ədədi(ədədləri) göstərmək. Yoxdursa false göstərmək.
 Məsələn: [3,10,2,5], [11, 50,2,51] => 2 ||| [3,10,2,5], [11,50,2,3] => 2, 3 ||| [3,10,2], [11,50,3] => false
 */
-/* let arr = [3,10,2]
-let arr1 = [11,50,5]
+let arr = [3,10,2,5]
+let arr1 = [11,50,2,3]
 let result = ''
 let isFound = true
 for(let i = 0; i < arr.length; i++){
     for(let j = 0; j < arr1.length; j++){
         if(arr[i] == arr1[j]){
-            result += arr[i] + ','
+            result = result + arr[i] + ','
         }
     }
-} */
+}
 
 /* 
 Напишите программу на JavaScript для замены каждого символа в данной строке на следующий за ним символ в алфавите.
@@ -138,3 +138,8 @@ let str1 = 'otlot';
 console.log(str.split("").sort().join(""));
 console.log(str1.split("").sort().join(""));
  */
+
+/* 18) Verilmiş ədədi verilmiş ədədə tam bölünənə kimi dövr etdirmək. Sonda alınan nəticəni yazmaq.
+Məsələn: 16, 2 => 1 (izah: 16:2=8, 8:2=4, 4:2=2, 2:2=1, 1:2=0.5). Cavab 1
+18, 3 => 2 (izah: 18:3=6, 6:3=2, 2:3=0.66). Cavab 2
+19, 5 => 19 (izah: 19:5=3.8). Cavab 19 */
