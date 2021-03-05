@@ -13,4 +13,7 @@
     -- Day - 03 Tasks complete
     -- Day - 04 Tasks complete
     -- Day - 05 Tasks complete
+# Week-07
+    -- Day - 02 Tasks complete
+    -- Day - 03 Tasks complete
     
