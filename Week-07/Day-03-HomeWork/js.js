@@ -131,9 +131,7 @@ const join  = (array, sep=',') => {
 
 console.log(join(array)) */
 
-/* 5) Replace*/ 
+
 /* 7) Trim // Ortadaki bosluguda silinir*/
 /* 11) Shift */
 /* 12) Unshift */
-/* 14) Splice */
-/* 15) Split */
