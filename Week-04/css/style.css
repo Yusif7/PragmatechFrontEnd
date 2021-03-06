@@ -11,6 +11,8 @@ body{
 .h-2p{height: 2px;}
 .h-88{height: 88%;}
 .w-50p{width: 50px;}
+.w-70{width: 70%;}
+.w-85{width: 85%}
 .br-50{border-radius: 50%;}
 .b-white{border: 1px solid #ffffff;}
 .b-97969a{border: 1px solid #97969a;}
@@ -26,6 +28,12 @@ body{
 /*Special styles*/
 .bg-header{
     background-image: url(../files/bg-header.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-footer{
+    background-image: url(../files/bg-footer.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -129,6 +137,35 @@ body{
     background-image: url(../files/Logo_of_Mango_\(new\).png);
 }
 
+.search-logo{
+    background-image: url(../files/paper122.png);
+    width: 25px;
+    height: 25px;
+    display: block;
+    background-color: transparent;
+    border: none;
+}
+.nav-logo{
+    background-image: url(../files/footer-icon.png);
+    width: 13px;
+    height: 18px;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+input::-webkit-input-placeholder {
+    font-size: 14px;
+}
+
+.box {
+    width: 70px;
+    height: 45px;
+    background-color: #a199b3;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
 /* Small */
 @media (min-width: 576px) {
 }
@@ -141,16 +178,20 @@ body{
 /* Large */
 @media (min-width: 992px) {
 .fs-lg-30{font-size: 30px;}
+.fs-lg-12{font-size: 12px;}
 .fs-lg-13{font-size: 13px;}
 .fs-lg-14{font-size: 14px;}
+.fs-lg-15{font-size: 15px;}
 .fs-lg-16{font-size: 16px;}
 .fs-lg-22{font-size: 22px;}
 .fs-lg-50{font-size: 50px;}
 .fs-lg-100{font-size: 100px;}
+.h-lg-45{height: 45px;}
 .h-lg-50{height: 50px;}
 .h-lg-70{height: 70px;}
 .h-lg-100{height: 100px;}
 .h-lg-190{height: 190px;}
+.h-lg-400{height: 400px;}
 .h-lg-500{height: 500px;}
 .h-lg-550{height: 550px;}
 .h-lg-660{height: 660px;}

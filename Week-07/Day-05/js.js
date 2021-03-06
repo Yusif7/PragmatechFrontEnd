@@ -1,7 +1,7 @@
 /* replace */
 
 let str = 'javascript';
-let find = 'python';
+let find = 'IT';
 
 
 const repalcePart = (start=0, str, end=str.length) => {
