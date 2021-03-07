@@ -13,6 +13,7 @@ body{
 .w-50p{width: 50px;}
 .w-70{width: 70%;}
 .w-85{width: 85%}
+.w-90{width: 90%;}
 .br-50{border-radius: 50%;}
 .b-white{border: 1px solid #ffffff;}
 .b-97969a{border: 1px solid #97969a;}
@@ -165,6 +166,25 @@ input::-webkit-input-placeholder {
     position: absolute;
     top: 0;
     right: 0;
+}
+
+.sosial-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #e7e6eb;
+    border-radius: 50%;
+}
+
+.fb-icon{
+    background-image: url(../files/fb-sosial.png);
+    display: block;
+    width: 7px;
+    height: 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 /* Small */
 @media (min-width: 576px) {
