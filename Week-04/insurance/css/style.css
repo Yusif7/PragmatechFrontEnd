@@ -1,0 +1,79 @@
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+}
+a {
+    text-decoration: none !important;
+}
+img {
+    height: 100%;
+    width: 100%;
+}
+
+@font-face{
+    font-family: 'Raleway Heavy';
+    src: url(/Week-04/secure/css/Raleway-Heavy.ttf);
+}
+/* General styles */
+.ff-raleheavy{font-family: 'Raleway Heavy';}
+.ff-rale{font-family: 'Raleway', sans-serif;}
+.fw-300{font-weight: 300;}
+.fw-400{font-weight: 400;}
+.fw-700{font-weight: 700;}
+.lh-03{line-height: 0.3;}
+.lh-05{line-height: 0.5;}
+.w-75{width: 75%;}
+.w-80{width: 80%;}
+
+/* Border styles */
+.b-white{border:1px solid #ffffff}
+
+/* Bg and Color styles */
+.bg-202020{background-color: #202020;}
+.bg-171717{background-color: #171717;}
+.bg-ffd800{background-color: #ffd800;}
+
+.color-ffd800{color: #ffd800;}
+
+/* Special styles */
+.shape-icon {
+    background-image: url(../files/Shape-1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+/* Small */
+@media (min-width: 576px) {
+}
+
+/* Medium */
+@media (min-width: 768px) {
+
+}
+
+/* Large */
+@media (min-width: 992px) {
+.fs-lg-14{font-size: 14px;}
+.fs-lg-18{font-size: 18px;}
+.fs-lg-22{font-size: 22px;}
+.fs-lg-30{font-size: 30px !important;}
+.fs-lg-34{font-size: 34px;}
+.fs-lg-38{font-size: 38px;}
+.fs-lg-60{font-size: 60px;}
+.fs-lg-100{font-size: 100px;}
+
+.w-lg-63{width: 63px;}
+.h-lg-42{height: 42px;}
+}
+
+/* Extra Large */
+@media (min-width: 1200px) {
+
+}
