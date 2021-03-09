@@ -13,7 +13,7 @@ img {
 
 @font-face{
     font-family: 'Raleway Heavy';
-    src: url(/Week-04/secure/css/Raleway-Heavy.ttf);
+    src: url(../css/Raleway-Heavy.ttf);
 }
 /* General styles */
 .ff-raleheavy{font-family: 'Raleway Heavy';}
@@ -23,11 +23,15 @@ img {
 .fw-700{font-weight: 700;}
 .lh-03{line-height: 0.3;}
 .lh-05{line-height: 0.5;}
+.w-30{width: 30px;}
 .w-75{width: 75%;}
 .w-80{width: 80%;}
+.h-30{height: 30px;}
 
 /* Border styles */
 .b-white{border:1px solid #ffffff}
+.b-4f5d73{border: 3px solid #4f5d73;}
+.br-10{border-radius: 10%;}
 
 /* Bg and Color styles */
 .bg-202020{background-color: #202020;}
@@ -35,6 +39,7 @@ img {
 .bg-ffd800{background-color: #ffd800;}
 
 .color-ffd800{color: #ffd800;}
+.color-919191{color:#919191;}
 
 /* Special styles */
 .shape-icon {
@@ -45,7 +50,43 @@ img {
     width: 100%;
     height: 100%;
 }
+.atlas-icon{
+    background-image: url(../files/atlas.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 170px;
+    height: 29px;
+}
 
+.tick-icon{
+    background-image: url(../files/check-tick-icon-14173.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+}
+.tick-pos{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+.bob-icon{
+    background-image: url(../files/bob-marley.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+}
+.bob-pos{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
 
 
 
@@ -62,6 +103,7 @@ img {
 @media (min-width: 992px) {
 .fs-lg-14{font-size: 14px;}
 .fs-lg-18{font-size: 18px;}
+.fs-lg-20{font-size: 20px;}
 .fs-lg-22{font-size: 22px;}
 .fs-lg-30{font-size: 30px !important;}
 .fs-lg-34{font-size: 34px;}
@@ -70,7 +112,11 @@ img {
 .fs-lg-100{font-size: 100px;}
 
 .w-lg-63{width: 63px;}
+.w-lg-170{width: 170px;}
+.w-lg-460{width: 460px;}
 .h-lg-42{height: 42px;}
+.h-lg-500{height: 500px;}
+.h-lg-597{height: 597px;}
 }
 
 /* Extra Large */
