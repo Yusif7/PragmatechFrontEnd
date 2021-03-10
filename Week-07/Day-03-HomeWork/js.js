@@ -69,16 +69,16 @@ console.log(concat('javascript' + 'python' + 'java'))
  */
 
 /* 7) Trim */
-/* // Ortadaki bosluguda silir
-let str = ' Javas cript '
+// Ortadaki bosluguda silir
+/* let str = ' Javas cript '
 let space = ' '
 let result = ''
 for (let i = 0; i < str.length; i++){
-    if(str[i] !== space){
+    if(str[i] != space || (str[i-1] != space && str[i+1] != space)){
         result += str[i]
-    } 
+    }
 }
- */
+console.log(result) */
 
 /* 8) toString */
 /* const toString = (num) =>{
@@ -131,7 +131,5 @@ const join  = (array, sep=',') => {
 
 console.log(join(array)) */
 
-
-/* 7) Trim // Ortadaki bosluguda silinir*/
 /* 11) Shift */
 /* 12) Unshift */
