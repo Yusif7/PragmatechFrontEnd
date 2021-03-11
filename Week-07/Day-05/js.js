@@ -125,7 +125,7 @@ for (let i = 100; i <= 500; i++){
 } */
 
 /* Armstronq ededler=> 371=>3^3+7^3+1^3=27+343+1=371 (Armstronq ededler) //Verilmis ededin armstronq eded olub olmadigini mueyyen eden proqram */
-/* let result = ''
+let result = ''
 const armstrong = (num) =>{
     let result = []
     str = String(num)
@@ -134,7 +134,7 @@ const armstrong = (num) =>{
     }
     let numResult = 0
     for(let j = 0; j < result.length;j++){
-        numResult += Number(result[j]*result[j]*result[j])
+        numResult += Number(result[j]**str.length)
     }
     if(numResult === num){
         return true
@@ -144,6 +144,4 @@ const armstrong = (num) =>{
     }
 }
 
-console.log(armstrong(407)) */
-
-
+console.log(armstrong(154))
