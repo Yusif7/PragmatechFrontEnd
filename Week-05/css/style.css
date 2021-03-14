@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Crimson Roman';
+    src: url(crimsontext.ttf);
+}
+
+.ff-crimson {
+    font-family: 'Crimson Text', serif;
+}
+
+.ff-crimsonR {
+    font-family: 'Crimson Roman';
+}
+
+
+/* Small */
+
+@media (min-width: 576px) {}
+
+
+/* Medium */
+
+@media (min-width: 768px) {}
+
+
+/* Large */
+
+@media (min-width: 992px) {}
+
+
+/* Extra Large */
+
+@media (min-width: 1200px) {}
