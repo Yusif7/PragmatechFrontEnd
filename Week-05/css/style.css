@@ -11,6 +11,143 @@
     font-family: 'Crimson Roman';
 }
 
+.ff-mont {
+    font-family: 'Montserrat', sans-serif;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* General styles */
+
+.lh-0 {
+    line-height: 0;
+}
+
+.c-pointer {
+    cursor: pointer;
+}
+
+.obj-none {
+    object-fit: none;
+}
+
+.fw-bold {
+    font-weight: bold;
+}
+
+.fw-900 {
+    font-weight: 900;
+}
+
+.b-e3e8f0 {
+    border: 1px solid #e3e8f0;
+}
+
+.transition {
+    transition: all 1s ease;
+}
+
+.menu li a {
+    color: black !important;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.sign {
+    background: transparent;
+    border: 1px solid #e3e8f0;
+    color: black !important;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px 20px;
+    transition: all 1s ease;
+}
+
+.sign:hover {
+    background-color: black;
+    color: wheat !important;
+    transition: all 1s ease;
+}
+
+.rounded {
+    position: absolute;
+    left: 0;
+    bottom: 5%;
+}
+
+.rounded span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #e3e8f0;
+    border-radius: 50%;
+    margin-right: 5px;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+.rounded span:hover {
+    background-color: white;
+    transition: all 1s ease;
+}
+
+.arrow:hover {
+    background-color: white;
+    transition: all 1s ease;
+}
+
+.arrow span:hover {
+    color: black !important;
+    transition: all 1s ease;
+}
+
+
+/* Background styles */
+
+.bg-e3e8f0 {
+    background-color: #e3e8f0;
+}
+
+.bg-1c1e23 {
+    background-color: #1c1e23;
+}
+
+
+/* Measure styles */
+
+.w-23 {
+    width: 23px;
+}
+
+.w-40 {
+    width: 40px;
+}
+
+.w-70p {
+    width: 70%;
+}
+
+.h-5 {
+    height: 5px;
+}
+
+.h-6 {
+    height: 6px;
+}
+
+.h-23 {
+    height: 23px;
+}
+
+.h-40 {
+    height: 40px;
+}
+
 
 /* Small */
 
@@ -24,7 +161,26 @@
 
 /* Large */
 
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+    .fs-lg-18 {
+        font-size: 18px !important;
+    }
+    .fs-lg-14 {
+        font-size: 14px;
+    }
+    .fs-lg-16 {
+        font-size: 16px;
+    }
+    .fs-lg-26 {
+        font-size: 26px;
+    }
+    .fs-lg-42 {
+        font-size: 42px;
+    }
+    .h-lg-500 {
+        height: 500px;
+    }
+}
 
 
 /* Extra Large */

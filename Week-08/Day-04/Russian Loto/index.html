@@ -22,13 +22,25 @@
     <button id="next">Get Next Daş</button>
     <script src="js.js"></script>
     <script>
+        // TODO: bir biletde 2 card olur
+        // TODO: 1-ci turda ilk setri dolan udur
+        // TODO: 2-ci turda bir card dolan udur
+        // TODO: 3-ci turda iki card dolan udur
+        // TODO: cixan ilk 15 dashin hamisi bir card-da varsa udursan
         const out = [];
-
-        console.log(getCard());
-
+        const cards = getCard();
+        //console.log(cards);
+        let ticket = cardsCount();
+        console.log(ticket)
 
         document.querySelector('#next').addEventListener('click', e => {
-            console.log(turn());
+            const outDash = turn();
+            //console.log(outDash[outDash.length - 1]);
+            //checkCardNumber(outDash[outDash.length - 1], [...cards]);
+            //console.log(cards);
+            ticket = [...checkTicketNumber(outDash[outDash.length - 1], [...ticket])]
+                //console.log(ticket)
+            console.log(checkWinner(ticket))
         });
     </script>
 </body>

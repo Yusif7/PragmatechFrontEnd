@@ -15,7 +15,7 @@ const indexOf = (arr, elem) => {
 }
 
 const turn = () => {
-    let max = 5
+    let max = 90
     let rand = random(1, max)
 
     if (indexOf(out, rand) === -1) { //Esli rand deyerinde index icinde yoxdursa onu elave out icine
@@ -42,27 +42,35 @@ const getIntervalIndex = (num) => {
 }
 
 //kartda eyni rəqəmlər ola bilməz 
-const includesMulti = (arr, elem) => {
+/* const includesMulti = (arr, elem) => {
     let symbol = "#";
-    let count = 0;
     for (let i = 0; i < arr.length; i++) {
         let arr1 = arr[i]
         for (let j = 0; j < arr1.length; j++) {
             if (elem == arr1[j]) {
                 arr1[j] = symbol
+            }
+        }
+    }
+
+    let count = 0;
+    for (let i = 0; i < arr.length; i++) {
+        let arr1 = arr[i]
+        for (let j = 0; j < arr1.length; j++) {
+            if ("#" == arr1[j]) {
                 count++
                 if (count == 5) {
-                    return true
+                    return true;
                 }
             }
         }
         count = 0
     }
     return false
-}
+} */
 
 /* let a = [
-    [1, '', 1, '', 1, 1, '', ''],
+    [1, '', 1, '', 1, 1, '', 1],
     ['', 1, 1, 1, '', 1, '', ''],
     [1, 1, 1, 1, '', '', '', '', '']
 ]
@@ -116,5 +124,61 @@ const getCard = () => {
         }
         push(card, row)
     }
+    //console.log(repeated)
     return card
+}
+
+
+/* Check numbers in card rows */
+const checkCardNumber = (num, cards = []) => {
+    const numIndex = getIntervalIndex(num); // Cixan dasin index teyin olunur
+    for (let i = 0; i < cards.length; i++) {
+        if (num === cards[i][numIndex]) { //Cixan deyerin hansi setrin hansi sutunda yerlesdiyini axtaririr
+            cards[i][numIndex] = 'X'; // Eger row icinde num deyeri varsa o zaman o deyer X ile evez olunur
+            console.log(`${num} ${i+1}-ci sirada tapildi`);
+            return cards;
+        }
+    }
+    return cards;
+}
+
+// Add card count
+const cardsCount = () => { // Parametr ehtiyac yoxdu
+    let array = []
+    for (let i = 0; i < 2; i++) {
+        push(array, getCard()) //Bir basa funksiyanin ozunu veriririk ki her defe yeni kart alaq , eger console hissesinde versek getcard funksiyasini iki eded eyni kart qaytaracaq
+    }
+    return array
+}
+
+/* Check existance of number in ticket */
+const checkTicketNumber = (num, ticket = []) => {
+    const ticketNew = []
+    for (let i = 0; i < ticket.length; i++) {
+        push(ticketNew, checkCardNumber(num, ticket[i]))
+    }
+    return ticketNew;
+}
+
+/* Check winner of game */
+const checkWinner = (ticket) => {
+    const check = [
+            [0, 0, 0],
+            [0, 0, 0]
+        ] // ticket
+    for (let i = 0; i < ticket.length; i++) {
+        for (let j = 0; j < ticket[i].length; j++) {
+            for (let k = 0; k < ticket[i][j].length; k++) {
+                if (ticket[i][j][k] === 'X') {
+                    check[i][j]++;
+                    if (check[i][j] === 4) {
+                        alert('bilet gozleyir');
+                    } else if (check[i][j] === 5) {
+                        alert('bilet uddu');
+                    }
+                }
+            }
+        }
+    }
+    return check
 }
