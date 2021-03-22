@@ -35,6 +35,10 @@ img {
     object-fit: none;
 }
 
+.obj-contain {
+    object-fit: contain;
+}
+
 .fw-bold {
     font-weight: bold;
 }
@@ -132,6 +136,33 @@ img {
     color: white;
 }
 
+.drop-icon {
+    display: inline-block;
+    width: 6px;
+    height: 11px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(../files/Open-Icon-line.png);
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    transition: all 0.8s ease-out 0s;
+}
+
+.main:active .drop-icon {
+    transform: rotate(90deg);
+    transition: all 0.8s ease-out 0s;
+}
+
+.main {
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.main:last-child {
+    border-bottom: none;
+}
+
 
 /* Background styles */
 
@@ -158,6 +189,10 @@ img {
     color: black !important;
 }
 
+.color-bdc3d6 {
+    color: #bdc3d6;
+}
+
 
 /* Measure styles */
 
@@ -181,6 +216,10 @@ img {
     width: 70%;
 }
 
+.w-200 {
+    width: 200px;
+}
+
 .h-5 {
     height: 5px;
 }
@@ -201,6 +240,14 @@ img {
     height: 40px;
 }
 
+.h-180 {
+    height: 180px;
+}
+
+.h-200 {
+    height: 200px;
+}
+
 
 /* Small */
 
@@ -217,6 +264,9 @@ img {
 @media (min-width: 992px) {
     .fs-lg-11 {
         font-size: 11px;
+    }
+    .fs-lg-12 {
+        font-size: 12px;
     }
     .fs-lg-13 {
         font-size: 13px;
