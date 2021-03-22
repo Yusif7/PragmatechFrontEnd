@@ -47,6 +47,14 @@ img {
     border: 1px solid #e3e8f0;
 }
 
+.br-f2f2f2 {
+    border-right: 2px solid #f2f2f2;
+}
+
+.bl-f2f2f2 {
+    border-left: 2px solid #f2f2f2;
+}
+
 .transition {
     transition: all 1s ease;
 }
@@ -106,8 +114,30 @@ img {
     transition: all 1s ease;
 }
 
+.tick {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(../files/Checkbox-BG-On.png);
+    display: block;
+}
+
+.tick-icon {
+    background-image: url(../files/Open-Icon.png);
+    width: 11px;
+    height: 6px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    display: block;
+    color: white;
+}
+
 
 /* Background styles */
+
+.bg-fffff {
+    background-color: #ffffff;
+}
 
 .bg-e3e8f0 {
     background-color: #e3e8f0;
@@ -115,6 +145,17 @@ img {
 
 .bg-1c1e23 {
     background-color: #1c1e23;
+}
+
+.bg-e4e5e7 {
+    background-color: #e4e5e7;
+}
+
+
+/* Color styles */
+
+.color-black {
+    color: black !important;
 }
 
 
@@ -126,6 +167,14 @@ img {
 
 .w-40 {
     width: 40px;
+}
+
+.w-10p {
+    width: 10% !important;
+}
+
+.w-65p {
+    width: 65%;
 }
 
 .w-70p {
@@ -142,6 +191,10 @@ img {
 
 .h-23 {
     height: 23px;
+}
+
+.h-25p {
+    height: 25px !important;
 }
 
 .h-40 {
@@ -162,14 +215,20 @@ img {
 /* Large */
 
 @media (min-width: 992px) {
-    .fs-lg-18 {
-        font-size: 18px !important;
+    .fs-lg-11 {
+        font-size: 11px;
+    }
+    .fs-lg-13 {
+        font-size: 13px;
     }
     .fs-lg-14 {
         font-size: 14px;
     }
     .fs-lg-16 {
         font-size: 16px;
+    }
+    .fs-lg-18 {
+        font-size: 18px !important;
     }
     .fs-lg-26 {
         font-size: 26px;
