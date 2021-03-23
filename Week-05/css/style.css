@@ -27,8 +27,16 @@ img {
     line-height: 0;
 }
 
+.lh-1 {
+    line-height: 1;
+}
+
 .c-pointer {
     cursor: pointer;
+}
+
+.ops-0 {
+    opacity: 0;
 }
 
 .obj-none {
@@ -57,6 +65,10 @@ img {
 
 .bl-f2f2f2 {
     border-left: 2px solid #f2f2f2;
+}
+
+.bt-f2f2f2 {
+    border-bottom: 1px solid #f2f2f2;
 }
 
 .transition {
@@ -161,6 +173,59 @@ img {
 
 .main:last-child {
     border-bottom: none;
+}
+
+.check {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #ffffff;
+    border: 1px solid #eff1f6;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.check:after {
+    content: url(../files/Selected-Dot.png);
+    position: absolute;
+    display: none;
+    line-height: 0;
+}
+
+.radio input:checked~.check:after {
+    display: block;
+}
+
+.box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #ffffff;
+    border: 1px solid #eff1f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:after {
+    content: url(../files/Check-Icon.png);
+    position: absolute;
+    display: none;
+    line-height: 0;
+}
+
+.checkbox input:checked~.box:after {
+    display: block;
+}
+
+.checkbox input:checked~.box {
+    background-color: #00e2aa;
 }
 
 
