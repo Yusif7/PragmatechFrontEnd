@@ -20,6 +20,12 @@ img {
     height: 100%;
 }
 
+ul {
+    list-style: none;
+    margin: 0 !important;
+    padding: 0;
+}
+
 
 /* General styles */
 
@@ -47,6 +53,10 @@ img {
     object-fit: contain;
 }
 
+.obj-cover {
+    object-fit: cover;
+}
+
 .fw-bold {
     font-weight: bold;
 }
@@ -67,12 +77,16 @@ img {
     border-left: 2px solid #f2f2f2;
 }
 
-.bt-f2f2f2 {
+.bb-f2f2f2 {
     border-bottom: 1px solid #f2f2f2;
 }
 
 .transition {
     transition: all 1s ease;
+}
+
+.overflow-h {
+    overflow: hidden;
 }
 
 .menu li a {
@@ -228,6 +242,53 @@ img {
     background-color: #00e2aa;
 }
 
+.price {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.page-count li {
+    padding: 0 16px !important;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    line-height: 2.5;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+}
+
+.page-count li:hover {
+    transition: all 0.3s ease 0s;
+    box-shadow: 0px 10px 20px 5px rgba(225, 226, 231, 1);
+    line-height: 2.5;
+    color: #e5e7ed;
+    border: 1px solid #e3e8f0;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+}
+
+.prev-page-count {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: fit-content;
+    cursor: pointer;
+}
+
+.next-page-count {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    height: fit-content;
+    cursor: pointer;
+}
+
+.line39 {
+    text-decoration: line-through;
+}
+
 
 /* Background styles */
 
@@ -281,8 +342,8 @@ img {
     width: 70%;
 }
 
-.w-200 {
-    width: 200px;
+.w-220 {
+    width: 220px;
 }
 
 .h-5 {
@@ -311,6 +372,10 @@ img {
 
 .h-200 {
     height: 200px;
+}
+
+.h-fit {
+    height: fit-content;
 }
 
 
@@ -350,6 +415,27 @@ img {
     }
     .fs-lg-42 {
         font-size: 42px;
+    }
+    .w-lg-60 {
+        width: 60px;
+    }
+    .w-lg-200 {
+        width: 200px;
+    }
+    .h-lg-20 {
+        height: 20px;
+    }
+    .h-lg-32 {
+        height: 32px;
+    }
+    .h-lg-90 {
+        height: 90px;
+    }
+    .h-lg-220 {
+        height: 220px;
+    }
+    .h-lg-284 {
+        height: 284px;
     }
     .h-lg-500 {
         height: 500px;
