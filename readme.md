@@ -1,24 +1,24 @@
 # Week-01 
-    -- Tasks complete
+- Tasks complete
 # Week-02
-    -- Task-01 complete
-    -- Task-02 complete
-    -- Task-04 complete
+- Task-01 complete
+- Task-02 complete
+- Task-04 complete
 # Week-03
-    -- Task-01 complete
-    -- Task-02 complete
+- Task-01 complete
+- Task-02 complete
 # Week-04
-    -- Tajam complete
-    -- CarInsurance complete
+- Tajam complete
+- CarInsurance complete
 # Week-06
-    -- Day - 01 Tasks complete
-    -- Day - 02 Tasks complete
-    -- Day - 03 Tasks complete
-    -- Day - 04 Tasks complete
-    -- Day - 05 Tasks complete
+- Day - 01 Tasks complete
+- Day - 02 Tasks complete
+- Day - 03 Tasks complete
+- Day - 04 Tasks complete
+- Day - 05 Tasks complete
 # Week-07
-    -- Day - 02 Tasks complete
-    -- Day - 03 Tasks complete
-    -- Day - 05 Tasks complete
+- Day - 02 Tasks complete
+- Day - 03 Tasks complete
+- Day - 05 Tasks complete
 # Week-08
-    -- Day - 05 Loto task complete
+- Day - 05 Loto task complete
