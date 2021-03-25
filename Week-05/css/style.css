@@ -26,6 +26,11 @@ ul {
     padding: 0;
 }
 
+a:hover {
+    text-decoration: none !important;
+    color: #b9bed1 !important;
+}
+
 
 /* General styles */
 
@@ -79,6 +84,14 @@ ul {
 
 .bb-f2f2f2 {
     border-bottom: 1px solid #f2f2f2;
+}
+
+.bb-2d2e33 {
+    border-bottom: 1px solid #2d2e33;
+}
+
+.b-radius-50 {
+    border-radius: 50%;
 }
 
 .transition {
@@ -289,6 +302,53 @@ ul {
     text-decoration: line-through;
 }
 
+.twitter-icon {
+    width: 100%;
+    height: 100%;
+    background-image: url(../files/Twitter-Icon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.fb-icon {
+    width: 100%;
+    height: 100%;
+    background-image: url(../files/Facebook-Icon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.google-icon {
+    width: 100%;
+    height: 100%;
+    background-image: url(../files/G+-Icon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.menu-footer li {
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.menu-footer li:first-child {
+    margin-left: 0;
+}
+
+.footer-icons {
+    margin-left: 30px;
+}
+
+.footer-icons:first-child {
+    margin-left: 0;
+}
+
 
 /* Background styles */
 
@@ -308,6 +368,10 @@ ul {
     background-color: #e4e5e7;
 }
 
+.bg-222328 {
+    background-color: #222328;
+}
+
 
 /* Color styles */
 
@@ -317,6 +381,10 @@ ul {
 
 .color-bdc3d6 {
     color: #bdc3d6;
+}
+
+.color-b9bed1 {
+    color: #b9bed1;
 }
 
 
@@ -416,6 +484,12 @@ ul {
     .fs-lg-42 {
         font-size: 42px;
     }
+    .w-lg-20 {
+        width: 20px;
+    }
+    .w-lg-40 {
+        width: 40px;
+    }
     .w-lg-60 {
         width: 60px;
     }
@@ -427,6 +501,9 @@ ul {
     }
     .h-lg-32 {
         height: 32px;
+    }
+    .h-lg-40 {
+        height: 40px;
     }
     .h-lg-90 {
         height: 90px;
