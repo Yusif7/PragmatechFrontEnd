@@ -1,0 +1,12 @@
+button {
+    width: 100%;
+    text-align: start;
+}
+
+.d-none {
+    display: none;
+}
+
+.d-blocks {
+    display: block;
+}
