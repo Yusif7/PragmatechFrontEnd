@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding-top: 0;
+    text-align: center;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.mt-3 {
+    margin-top: 30px !important;
+}
+
+.mt-5 {
+    margin-top: 50px;
+}
+
+.mt-10 {
+    margin-top: 100px;
+}
+
+.pxy {
+    padding: 6px 2px;
+}
+
+.va-middle {
+    vertical-align: middle;
+}
+
+.w-10p {
+    width: 10%;
+}
+
+.fs-40 {
+    font-size: 40px;
+}
+
+.fw-bold {
+    font-weight: bold;
+}
+
+.btn {
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.shape-3 {
+    width: 70px;
+    height: 70px;
+    font-size: 50px;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background-color: darkmagenta;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: all 0.5s ease-out 0s;
+}
+
+.shape-5 {
+    width: 70px;
+    height: 70px;
+    font-size: 50px;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    background-color: darkblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: all 0.5s ease-out 0s;
+}
+
+.shape-7 {
+    width: 70px;
+    height: 70px;
+    font-size: 50px;
+    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+    background-color: darkorange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: all 0.5s ease-out 0s;
+}
+
+.shape-9 {
+    width: 70px;
+    height: 70px;
+    font-size: 50px;
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+    background-color: darkred;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: all 0.5s ease-out 0s;
+}
+
+.brackets {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    align-items: center;
+    width: 80%;
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.brackets::before {
+    content: '[';
+    font-size: 50px;
+}
+
+.brackets::after {
+    content: ']';
+    font-size: 50px;
+}
+
+[class^="shape-"] {
+    margin: 0 10px;
+}
+
+[class^="shape-"]:hover {
+    transform: translateY(-10px);
+    transition: all 0.5s ease-out 0s;
+    cursor: pointer;
+}
+
+.label-num {
+    margin-top: 30px;
+    font-size: 50px;
+}
+
+.num {
+    vertical-align: middle;
+    padding: 6px 2px;
+    width: 10%;
+    cursor: pointer;
+    border: 2px solid red;
+}
+
+ ::-webkit-input-placeholder {
+    color: black;
+    font-size: 14px;
+}
+
+.num:hover,
+.num:focus {
+    background-color: red;
+}
+
+.sum {
+    font-size: 50px;
+}
+
+.btn-add {
+    vertical-align: middle;
+    padding: 6px 2px;
+    font-size: 14px
+}
+
+.reset {
+    font-size: 50px;
+    display: block;
+    margin: 0 auto;
+}
