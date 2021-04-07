@@ -24,3 +24,8 @@
 - Day - 05 Tasks complete
 # Week-08
 - Day - 05 Loto task complete
+# Week-10
+- Paper Rock Scissor
+- Dice Roll
+- Battleship
+- Random bg-colo changer
