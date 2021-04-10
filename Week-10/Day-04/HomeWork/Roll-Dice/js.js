@@ -22,6 +22,7 @@ const ShowNums = () => {
         array.length = [];
         brackets.innerText = '';
         document.querySelector('.sum').innerText = 0;
+        document.querySelector('.num').value = 0;
     })
     return array
 }

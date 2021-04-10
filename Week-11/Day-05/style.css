@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+span {
+    height: 40px;
+    display: inline-block;
+}
+
+.start,
+.end {
+    width: 40px;
+}
+
+.start {
+    background-color: red;
+}
+
+.middle {
+    width: 160px;
+    background-color: gray;
+}
+
+.end {
+    background-color: darkblue;
+}
