@@ -31,3 +31,6 @@
 - Random bg-colo changer
 # Week 11
 - Keep It Straight
+- Slider
+- Filter
+- Simon game
