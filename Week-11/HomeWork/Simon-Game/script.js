@@ -51,7 +51,6 @@ const play = () => {
             checkEndOfGame(colorArray[i])
         }
     })
-
 }
 
 play()
