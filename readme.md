@@ -34,3 +34,4 @@
 - Slider
 - Filter
 - Simon game
+- Budget
