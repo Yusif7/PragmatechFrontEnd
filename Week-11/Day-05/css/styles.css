@@ -1,0 +1,70 @@
+.bg-red {
+    background-color: red;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.bg-blue {
+    background-color: blue;
+}
+
+.bg-orange {
+    background-color: orange;
+}
+
+.d-flex {
+    display: flex
+}
+
+.d-none {
+    display: none
+}
+
+.jc-center {
+    justify-content: center;
+}
+
+.ai-center {
+    align-items: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.container {
+    width: 700px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10%;
+}
+
+.mt-100 {
+    margin-top: 100px;
+}
+
+.w-10 {
+    width: 10%
+}
+
+.w-80 {
+    width: 80%
+}
+
+.left {
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.right {
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.main {
+    height: 50px;
+    width: 50%;
+    margin: 0 auto;
+}
