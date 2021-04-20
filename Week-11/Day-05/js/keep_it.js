@@ -12,7 +12,9 @@ const random = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
 
 let isEnter = false;
+let level = 0;
 const container = document.querySelector('.container');
+const messageBlock = document.querySelector('#message');
 
 const setMessages = (winOrLose) => {
     const messages = [{
@@ -29,7 +31,6 @@ const setMessages = (winOrLose) => {
 
     winOrLose = Number(winOrLose);
 
-    const messageBlock = document.querySelector('#message');
     const messageHeading = messageBlock.querySelector('h1');
     const messageText = messageBlock.querySelector('h2');
     const messageButtons = messageBlock.querySelectorAll('button');
@@ -44,47 +45,69 @@ const setMessages = (winOrLose) => {
 }
 
 
+const goToLevels = (level) => {
+    const gameBoard = document.querySelector('#js-over');
+    console.log(level)
+    const levelOptions = [{
+            height: '50px',
+            width: '50%',
+            bgColor: 'white'
+        },
+        {
+            height: '30px',
+            width: '70%',
+            bgColor: 'white'
+        },
+        {
+            height: '20px',
+            width: '80%',
+            bgColor: 'transparent'
+        }
+    ];
+
+    if (level >= levelOptions.length) {
+        alert('oyun bitdi');
+        goToLevels(0);
+    } else {
+
+        gameBoard.style.height = levelOptions[level].height;
+
+        const gameBoardDivs = gameBoard.querySelectorAll('div');
+        gameBoardDivs[1].style.width = levelOptions[level].width;
+        gameBoardDivs[1].style.backgroundColor = levelOptions[level].bgColor;
+    }
+}
+
+// init
+//goToLevels(level);
+
+
 addEvent('.bg-red', 'mouseenter', e => {
     isEnter = true;
 });
 
 
+// for lose
 addEvent('#js-over', 'mouseleave', e => {
     if (isEnter) {
         isEnter = false;
         setMessages(isEnter);
-        nextLevel();
     }
 });
 
 
+// for win
 addEvent('.bg-blue', 'mouseenter', e => {
     if (isEnter) {
         setMessages(isEnter);
-        nextLevel();
         isEnter = false;
     }
 });
 
-const nextLevel = () => {
-    let count = 0;
-    document.querySelectorAll('button')[0].addEventListener('click', () => {
-        if (document.querySelectorAll('button')[0].innerText == 'Go to next level') {
-            count++
-            document.querySelector('#message').classList.add('d-none');
-            container.classList.remove('d-none');
-            let height = document.querySelector('.main').offsetHeight / 1.2;
-            let width = document.querySelector('.main').offsetWidth * 1.2;
-            document.querySelector('.main').setAttribute('style', `height:${height}px; width:${width}px;`);
-            if (count == 2) {
-                document.querySelectorAll('button').forEach(e => {
-                    e.style.display = 'none';
-                    return 0;
-                })
-            }
-        } else {
-            document.querySelector('#message').classList.add('d-none');
-            container.classList.remove('d-none');
-        }
-    })
-}
+
+// next level
+addEvent('#message button:first-child', 'click', () => {
+    messageBlock.classList.add('d-none');
+    container.classList.remove('d-none');
+    goToLevels(++level);
+});
